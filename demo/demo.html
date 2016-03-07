@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scope</title>
+  <script src="angular.js"></script>
+  <script src="demo.js"></script>
+</head>
+<body ng-app="app" ng-controller="demoController">
+  <input ng-model="cheese.name"> {{cheese.name}}
+
+  <input type="range" ng-model="count" />{{count}}
+  <div repeat="count">
+    <p>Content from the transclusion {{cheese.name}} {{$index}}</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Initial State -->
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scope</title>
+  <script src="angular.js"></script>
+  <script src="demo.js"></script>
+</head>
+<body ng-app="app" ng-controller="demoController">
+  <input ng-model="cheese.name"> {{cheese.name}}
+
+  <div transclusion-directive>
+    Content from the transclusion {{cheese.name}}
+  </div>
+
+</body>
+</html>
+ -->
